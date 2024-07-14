@@ -28,7 +28,7 @@ export default function RootLayout({
           <h1 className="flex items-center gap-3">
             <Link href={'/'}>
               <Image
-                src={"avatar.png"}
+                src={"/avatar.png"}
                 alt="avatar"
                 width={48}
                 height={48}
