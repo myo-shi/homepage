@@ -14,6 +14,11 @@ const notoSansJP = Noto_Serif_JP({
 export const metadata: Metadata = {
   title: "myo's homepage",
   description: "ホームページ",
+  openGraph: {
+    images: '',
+    url: 'https://myo-shi.github.io',
+    type: 'website',
+  }
 };
 
 export default function RootLayout({
