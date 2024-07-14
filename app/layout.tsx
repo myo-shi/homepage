@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import Image from "next/image";
 
-const inter = Inter({ subsets: ["latin"] });
+// import avatarPic from "../public/avatar.png";
+
+// const inter = Inter({ subsets: ["latin"] });
+const notoSansJP = Noto_Serif_JP({
+  weight: ["200", "300", "400", "500", "600", "700", "900"],
+  subsets: ["latin"],
+  fallback: ["system-ui", "serif"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +25,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${notoSansJP.className} m-auto py-4 max-w-xl`}>
+        <header className="flex items-center justify-between">
+          <h1 className="flex items-center gap-3">
+            <Link href={'/'}>
+              <Image
+                src={"avatar.png"}
+                alt="avatar"
+                width={48}
+                height={48}
+                className="rounded-full hover:opacity-70"
+              ></Image>
+            </Link>
+            <span className="text-2xl">myo's homepage</span>
+          </h1>
+          <nav className="flex items-center gap-3">
+            <Link href={"/"}>Home</Link>
+            <Link href={"/posts"}>Blog</Link>
+          </nav>
+        </header>
+        <main className="my-6">{children}</main>
+        <footer>© 2024 myo</footer>
+      </body>
     </html>
   );
 }
