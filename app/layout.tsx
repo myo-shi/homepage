@@ -8,7 +8,7 @@ import "./globals.css";
 const notoSansJP = Noto_Serif_JP({
   weight: ["200", "300", "400", "500", "600", "700", "900"],
   subsets: ["latin"],
-  fallback: ["system-ui", "serif"],
+  fallback: ["serif"],
 });
 
 export const metadata: Metadata = {

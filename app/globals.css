@@ -23,9 +23,6 @@
 }
 
 @layer base {
-  html {
-    font-family: system-ui, sans-serif;
-  }
   a {
     @apply text-blue-700 underline hover:no-underline
   }
