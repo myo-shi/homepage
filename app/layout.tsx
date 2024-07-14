@@ -6,7 +6,7 @@ import Image from "next/image";
 import "./globals.css";
 
 const notoSansJP = Noto_Serif_JP({
-  weight: ["200", "300", "400", "500", "600", "700", "900"],
+  weight: ["400", "500", "700"],
   subsets: ["latin"],
   fallback: ["serif"],
 });
@@ -39,7 +39,6 @@ export default function RootLayout({
           </h1>
           <nav className="flex items-center gap-3">
             <Link href={"/"}>Home</Link>
-            <Link href={"/posts"}>Blog</Link>
           </nav>
         </header>
         <main className="my-6">{children}</main>
