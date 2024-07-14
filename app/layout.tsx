@@ -6,7 +6,7 @@ import Image from "next/image";
 import "./globals.css";
 
 const notoSansJP = Noto_Serif_JP({
-  weight: ["400", "500", "700"],
+  weight: ["400"],
   subsets: ["latin"],
   fallback: ["serif"],
 });
