@@ -37,7 +37,7 @@ export default function RootLayout({
                 className="rounded-full hover:opacity-70"
               ></Image>
             </Link>
-            <span className="text-2xl">myo's homepage</span>
+            <span className="text-2xl">myo&apos;s homepage</span>
           </h1>
           <nav className="flex items-center gap-3">
             <Link href={"/"}>Home</Link>
