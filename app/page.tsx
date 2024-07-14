@@ -8,7 +8,7 @@ export default function Home() {
       <section>
         <ul className="flex gap-3">
           <li>
-            <a href="https://github.com/myoshi1012">Github</a>
+            <a href="https://github.com/myo-shi">Github</a>
           </li>
           <li>
             <a href="https://x.com/ma_yo_ooo">Twitter</a>
