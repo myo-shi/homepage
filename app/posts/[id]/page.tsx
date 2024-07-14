@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-// export const dynamicParams = false;
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   const postIds = getAllPostIds();
