@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props) {
     openGraph: {
       title,
       images: "",
-      url: `http://myo.io/posts/${id}`,
+      url: `http://myo-shi.github.io/posts/${id}`,
       type: "article",
     },
     twitter: {
