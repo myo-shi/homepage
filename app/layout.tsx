@@ -27,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${notoSansJP.className} m-auto py-4 max-w-xl`}>
+    <html lang="ja" className={`${notoSansJP.className}`}>
+      <body className={`m-auto py-4 max-w-xl sm:px-0 px-3`}>
         <header className="flex items-center justify-between">
           <h1 className="flex items-center gap-3">
             <Link href={'/'}>
